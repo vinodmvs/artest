@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<script src="ARJS/aframe.min.js"></script>
+<script src="ARJS/aframe-ar.js"></script>
+
+<a-scene embedded arjs = 'trackingMethod: best;'>
+
+<a-anchor hit-testing-enabled='true'>	
+		
+	<a-torus position="0 0.5 0" color="green" radius = "0.5">
+		<a-animation attribute="color"
+					dur = "10000"
+					from = "green"
+					to ="red"
+					repeat = "indefinite"></a-animation>
+	</a-torus>
+	a-plane src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/uvgrid/UV_Grid_Sm.jpg" width="2.5" height="1.5" position = "0 1 -1"></a-plane>
+	<a-text value ="Welcome To The Fun House" color="black" width="3" position="-1 0.5 -1"></a-text>
+		 
+</a-anchor>
+	<a-camera-static/>
+</a-scene>
+
+</html>
