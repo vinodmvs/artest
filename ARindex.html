@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="ARJS/aframe.min.js"></script>
+<script src="ARJS/aframe-ar.js"></script>
+
+<a-scene embedded arjs = 'trackingMethod: best;'>
+
+<a-anchor hit-testing-enabled='true'>
+
+
+		  <a-assets>
+				<video id="video_2" autoplay loop="true" src="media/video_2.mp4"></video>
+				
+		</a-assets>
+			  <!-- Using the asset management system. -->
+		<a-video src="#video_2" width="8" height="9" position="0 0 -20"></a-video>
+</a-anchor>
+	<a-camera-static/>
+</a-scene>
+</html>
